@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "c3d0fb21-d7e5-45c0-b7bd-6a90e7949fe1",
+		"name": "ivtest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "find-flights-IXC-GAU",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/flights/source/IXC/destination/GAU",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"flights",
+						"source",
+						"IXC",
+						"destination",
+						"GAU"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find-flights-ATQ-BLR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/flights/source/ATQ/destination/BLR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"flights",
+						"source",
+						"ATQ",
+						"destination",
+						"BLR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find-flights-IXC-COK",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/flights/source/IXC/destination/COK",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"flights",
+						"source",
+						"IXC",
+						"destination",
+						"COK"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

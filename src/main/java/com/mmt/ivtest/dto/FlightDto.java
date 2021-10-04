@@ -3,6 +3,11 @@ package com.mmt.ivtest.dto;
 import lombok.Data;
 import lombok.Getter;
 
+/**
+ * 
+ * @author rahul
+ *
+ */
 @Data
 @Getter
 public class FlightDto {

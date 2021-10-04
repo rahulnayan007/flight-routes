@@ -4,6 +4,11 @@ import java.util.Comparator;
 
 import com.mmt.ivtest.model.Flight;
 
+/**
+ * 
+ * @author rahul
+ *
+ */
 public class FlightComparator implements Comparator<Flight> {
 
 	@Override
