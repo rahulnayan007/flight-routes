@@ -60,9 +60,9 @@ public class FlightServiceImpl implements FlightService {
 		// get list of connecting flights from remaining items
 		List<List<Flight>> connectingFlightList = connectedFlightService.getConnectingFlights(flightsMap,
 				filteredFlightList, destination);
-		log.info("connected flights list fetched.");
+		log.info("connected flights list fetched\n{}", connectingFlightList);
 
-		log.info("getFlights service ends.");
+		log.info("getFlights service completed for source={} and destination={}", source, destination);
 		// response
 		return responseProcessor.prepareResponse(directFlightList, connectingFlightList);
 	}

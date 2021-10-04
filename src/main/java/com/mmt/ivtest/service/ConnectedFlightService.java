@@ -48,10 +48,10 @@ public class ConnectedFlightService {
 			// get connecting flights for the flight from origin
 			tempConnectingFlights.addAll(connectingFlightHelper.getConnectingFlightsOrderedByStartTime(flightListMap,
 					flightFromSource, destination));
-			log.info("connected flights checked.");
+			log.debug("connected flights checked.");
 			Flight lastSourceAndFirstConnFlight = morningFlightHelper.getFlightForMorningScenario(flightListMap,
 					flightFromSource, destination);
-			log.info("morning flight scenario checked.");
+			log.debug("morning flight scenario checked.");
 			if (null != lastSourceAndFirstConnFlight) {
 				tempConnectingFlights.add(lastSourceAndFirstConnFlight);
 			}

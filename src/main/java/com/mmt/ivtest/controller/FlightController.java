@@ -31,6 +31,7 @@ public class FlightController {
 	@GetMapping(value = "/source/{source}/destination/{destination}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<String> getFlights(@PathVariable("source") String source,
 			@PathVariable("destination") String destination) {
+		log.info("getFlights api called for source={} and destination={}", source, destination);
 		try {
 			return ResponseEntity.ok().body(flightService.getFlights(source, destination));
 		} catch (Exception e) {
